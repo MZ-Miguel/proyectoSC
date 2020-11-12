@@ -1,0 +1,127 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Style/StyleVista.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Engineering Register</title>
+</head>
+<body>
+    <div id="root">
+        <div class="d-flex" id="wrapper">
+            <div class="menu-left_nav bg-dark border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading text-light text-center bg-primary">SC Ingeniería y Construcción</div>
+                <div class="d-flex p-4 justify-content-around container_avatar">
+                    <img alt="avatar_user" src="http://cdn.onlinewebfonts.com/svg/img_351510.png" class="rounded-circle img_avatar" />
+                    <h4 class="text-light m-0 d-flex align-items-center text_avatar">71824224</h4>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="searchOT.html" class="text-light list-group-item list-group-item-action bg-dark"><i class="fas fa-home text-light"></i> Inicio</a>
+                    <a href="dashboard.html" class="text-light list-group-item list-group-item-action bg-dark"><i class="far fa-chart-bar text-light"></i> Pantalla Principal</a>
+                    <a href="DispatchOfItems.html" class="text-light list-group-item list-group-item-action bg-dark"><i class="fas fa-archive text-light"></i> Almacén</a>
+                    <a href="EngineeringRegister.html" class="link_activo text-light list-group-item list-group-item-action"><i class="fas fa-hard-hat"></i> Ingenieria</a>
+                    <a href="productionControl.html" class="text-light list-group-item list-group-item-action bg-dark"><i class="fas fa-cogs"></i> Producción</a>
+                    <a href="productionTracking.html" class="text-light list-group-item list-group-item-action bg-dark"><i class="fas fa-tasks"></i> Calidad</a>
+                    <a href="MaintenanceRegister.html" class="text-light list-group-item list-group-item-action bg-dark"><i class="fas fa-tools"></i> Mantenimiento</a>
+                </div>
+            </div>
+            <div id="page-content-wrapper" class="w-100 d-flex flex-column">
+                <nav class="fixed_nav navbar navbar-expand-m nav_main navbar-dark bg-dark border-bottom">
+                    <i id="menu-toggle" onclick="menuNav()" class="fas fa-angle-left text-light menu_main"></i>
+                    <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="name_avatar bg-dark text-white dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</span>
+                        <div class="dropdown-menu bg-dark dropdown-menu-right">
+                            <a class="text-light dropdown-item bg-dark" href="index.html">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container view_ptr__container mt-4em flex-column d-flex justify-content-center align-items-center">
+                    <div>
+                        <h3 class="text-center">Registro de ingenieria</h3>
+                    </div>
+                    <!--  -----------------------------------------------------------------                      -->
+                    <div class="mt-2 mb-2">
+                        <div class="bshadow d-flex justify-content-center align-items-center">
+                            <form method="post" enctype="multipart/form-data">
+                            <div>
+                                <input id="idIngenieria" name="file" type="file" required hidden="hidden" />
+                                <label onclick="importIngenieria()" class="btn btn-outline-primary p-2 border-r mb-0 mr-2" for="idIngenieria"><i class="far fa-file-pdf"></i> Importar</label>
+                                <span class="textfile" id="textFileIngenieria">No hay archivo...</span>
+                                <button for="idIngenieria" class="btn btn-dark border-r" type="submit">Guardar</button>
+                                <!--<button for="" class="btn btn-dark border-r" type="submit">Audtira</button>-->
+                               
+
+                            </div>
+                            </form>  
+                 
+                        </div>
+                    </div>
+                    <div class="bshadow p-4 mb-3 d-flex flex-column align-items-center justify-content-around">
+                        <h4 class="text-center text-primary">Vista previa</h4>
+                        <div class="view_ptr_search_form_input mr-0 mr-sm-2 mb-2">
+                            <input placeholder="O.T.C" autoComplete="off" type="text" class="view_ptr_search_input_content" />
+                        </div>
+                        <div class="view_ptr_search_form_input mr-0 mr-sm-2 mb-2">
+                            <input placeholder="Proyecto" autoComplete="off" type="text" class="view_ptr_search_input_content" />
+                        </div>
+                        <div class="view_ptr_search_form_input mr-0 mr-sm-2 mb-2">
+                            <input placeholder="Cliente" autoComplete="off" type="text" class="view_ptr_search_input_content" />
+                        </div>
+                        <div class="mr-0 d-flex align-items-center">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-secondary text-white" id="basic-addon3">Fecha</span>
+                            </div>
+                            <input autoComplete="off" type="date" class="ml-1 ml-sm-3" id="exampleInputDate" />
+                        </div>
+                    </div>                   
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="mr-2">
+                         <!--    <a href="#" class="btn btn-dark border-r">Guardar</a>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-dark border-r">Auditar</a>-->
+                            <div class="row">
+                                <!--<div class="col-3">
+                                    <div class="pull-right">
+                                        <button id="btn_Conciliacion_Cargar" class="btn btn-upload-ico">Cargar Archivo</button>
+                                    </div>
+                                    <input id="fup_EX_Archivo" type="file" style="display:none" accept="" />
+                                </div>-->
+                                <!--<div class="col-2">
+                                    <div class="pull-right">
+                                        <button id="btn_Conciliacion_Save" class="btn btn-save-ico">Save</button>
+                                    </div>
+                                </div>-->
+                                <div id="div_Conciliacion_TableConciliacion"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<img src="~/Assets/tuercas.jpg" alt="tuercas" class="imagen__back"/>      -->        
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <div class="pull-right">
+                <button id="btn_Conciliacion_Cargar" class="btn btn-upload-ico">Cargar Archivo</button>
+            </div>
+            <input id="fup_EX_Archivo" type="file" style="display:none" accept="" />
+        </div>
+        <div class="col-2">
+            <div class="pull-right">
+                <button id="btn_Conciliacion_Save" class="btn btn-save-ico">Save</button>
+            </div>
+        </div>
+    </div>
+    <div id="div_Conciliacion_TableConciliacion"></div> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="~/Scripts/EngineeringRegister.js"></script>
+    <script src="~/Scripts/ScripVista.js"></script>
+</body>
+</html>

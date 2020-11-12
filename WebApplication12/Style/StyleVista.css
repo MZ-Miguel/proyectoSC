@@ -1,0 +1,462 @@
+﻿
+/* Formulario(Login) */
+
+.form-container{
+  border-radius: 10px ;
+  opacity: .85;
+}
+
+.imagen__fondo{
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* Icono usuario(Login) */
+.svg_input_user{
+  display: flex;
+  align-self: center;
+  width: 23px;
+  height: 26px;
+  z-index: 20;
+  font-size: 23px;
+  margin-left: 0.5rem;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Contenido central Dashboard(MainPage) */
+
+.img_resumen{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.img_graficos{
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+}
+
+.line-resumen{
+  width: 100%;
+  height: 2px;
+  box-shadow: 1px 1px rgba(189, 189, 189, 0.979);
+}
+
+
+/* ---------------------------------------------------------------------------- */
+
+/* Estilos Utiles(SearchOT) */
+
+.op-85{
+  opacity: .85 !important;
+}
+
+/* Imagen de fondo(SearchOT) */
+.imagen__back{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  /* height: calc(100vh - 57px); */
+  top: 8%;
+  position: fixed;
+  height: 92%;
+  opacity: 0.64;
+}
+
+/* Contenedor de formulario(SearchOT) */
+.searchot_content{
+  /* position: fixed; */
+  /* height: calc(100vh - 57px); */
+  top: 8%;
+  height: 92%;
+  z-index: 1;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+
+/* Contenedor del titulo(ProcessRegister) */
+
+.view_rp__container,
+.view_ptr__container{
+  top: 8%;
+  height: 92%;
+  z-index: 1;
+}
+
+.mt-4em{
+  margin-top: 3.8em;
+  height: 100%;
+}
+
+.view_rp_nav_sub{
+  display: inline-block;
+  font-weight: 400;
+  /* color: #fff; */
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #212529;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.view_rp_nav_sub:hover{
+  background-color: #007bff !important;
+  border-radius: 10px;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  /* border: 1px solid #fff !important; */
+}
+
+.view_rp_nav_sub:active,
+.view_rp_nav_sub:focus{
+  background-color: #007bff !important;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Lo anterior fue reemplazo por esto*/
+
+.btn_nav{
+  background-color: #343a40 !important;
+}
+
+.btn_nav:hover,
+.btn_nav:active,
+.btn_nav:focus{
+  background-color: #007bff !important;
+  outline: none;
+}
+
+
+.link_activo{
+  background-color: #007bff !important;
+}
+
+.table_vertical_middle{
+  vertical-align: middle !important;
+  padding: 0.48rem !important;
+}
+
+.table_vertical_middle > input[type='checkbox']{
+  transform: scale(1.5);
+}
+
+.icon_search__container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_tbcenter{
+  position: relative !important;
+  height: 20px;
+  font-size: 22px;
+}
+
+.icon_tbcenter:hover{
+  text-decoration: none;
+}
+
+.text_area_sresize{
+  resize: none;
+  height: 200px;
+  outline: none;
+  border: none;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  box-shadow: 4px 4px 0px 1px rgba(0, 0, 0, 0.25);
+}
+
+.text_area_hregister{
+  height: 100px;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* Nav Superior(MainPage / SearchOT) */
+.nav_main{
+  /* height: 57px; */
+  height: 8%;
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+}
+
+.fixed_nav{
+  position: fixed !important;
+}
+
+.name_avatar:focus,
+.name_avatar:hover{
+  text-decoration: none;
+}
+
+.menu_main{
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
+
+/* Sidebar izquierdo(MainPage / SearchOT) */
+.menu-left_nav{
+  width: 241px;
+}
+
+.container_avatar{
+  max-width: 240px;
+}
+
+.img_avatar{
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  max-width: 100%;
+  width: 80px;
+  height: 80px;
+}
+
+.text_avatar{
+  padding-left: 1em ;
+}
+
+
+
+
+/* Estilos Utiles(SearchOT / Login) */
+
+.border-r{
+  border-radius: 10px !important;
+}
+
+/* Contenedor del logo(SearchOT / Login) */
+
+.container_form_input{
+  max-height: 38px;
+  width: 100%;
+  display: flex;
+  height: 38px;
+  position: relative;
+  margin-bottom: 1.4em;
+}
+
+
+
+
+/* Input de texto(SearchOT / Login) */
+.input_content{
+  outline: none;
+  padding-left: 2.2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.04em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-right: 0.4em;
+}
+
+.input_spleft{
+  padding-left: 0.8em;
+}
+
+.input_content:focus{
+  border: 1px solid rgb(74, 243, 255);
+}
+
+
+
+
+/* Icono ojo(SeachOT / Login) */
+.svg_input_eyed,
+.svg_input_search{
+  display: flex;
+  position: absolute;
+  align-self: center;
+  right: 0;
+  width: 25px;
+  height: 20px;
+  font-size: 22px;
+  /*color: var(--second-color);*/
+  margin-right: .5rem;
+  z-index: 10000;
+}
+
+.svg_input_eyed:hover,
+.svg_input_search:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Clases Formulario de busqueda(ProcessRegister) */
+
+.view_rp_search_form__container,
+.view_ptr_search_form__container{
+  width: 75%;
+}
+
+.bshadow{
+  /* border: 1px solid rgba(0, 0, 0, 0.25); */
+  padding: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textfile{
+  font-weight: bold;
+}
+
+.view_rp_search_form_input,
+.view_ptr_search_form_input{
+  height: 38px;
+  width: 100%;
+  position: relative;
+}
+
+.view_rp_search_input_content,
+.view_ptr_search_input_content{
+  outline: none;
+  padding-left: 0.8em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 1.04em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* padding-right: 0.4em; */
+}
+
+.view_rp_search_input_content:focus,
+.view_ptr_search_input_content:focus{
+  border: 1px solid rgb(74, 243, 255);
+}
+
+.pr-icon{
+  padding-right: 2.2em;
+}
+
+/* Clases Fecha */
+
+.spanDate{
+  font-weight: bold;
+}
+
+/* Clases para establecer un alto */
+.h_200{
+  height: 200px;
+}
+
+/* Clases Sidebar(SearchOT / MainPage) */
+
+.upcase{
+  text-transform: uppercase;
+}
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  /* padding: 0.875rem 1.25rem; */
+  /* padding-left: 2em; */
+  padding: 0.4rem 0;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (max-width: 575px){
+
+  .registro_container{
+    width: 100% !important;
+  }
+
+  .htable{
+    height: 250px;
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 576px){
+
+  .registro_container{
+    width: 75% !important;
+  }
+
+  .htable{
+    height: 250px;
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .registro_container{
+    width: 60% !important;
+  }
+
+  .htable{
+    height: 160px;
+    max-height: 180px;
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 992px){
+
+  .registro_container{
+    width: 50% !important;
+  }
+
+}
+
+@media (min-width: 1200px){
+
+  .registro_container{
+    width: 60% !important;
+  }
+
+}
